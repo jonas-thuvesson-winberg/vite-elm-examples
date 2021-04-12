@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  outline: none !important;
+
+  * {
+    outline: none !important;
+  }
+
+  height: 100vh;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: white;
+}
+
+.main {
+  @apply flex;
+  @apply flex-col;
+  @apply justify-center;
+  @apply items-center;
+  @apply pt-12;
+  @apply pb-12;
+  @apply rounded-xl;
+  @apply bg-purple-900;
+  @apply relative;
+  @apply w-1/2;
+
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: auto;
+  margin-right: auto;
+
+  button {
+    @apply min-w-1/2;
+    @apply max-w-lg;
+    @apply rounded-md;
+    @apply bg-purple-400;
+    @apply p-3;
+    @apply m-6;
+    @apply block;
+
+    &:hover {
+      @apply bg-purple-500;
+    }
+
+    &:active {
+      @apply bg-purple-600;
+    }
+  }
+
+  h1 {
+    @apply text-4xl;
+  }
+}
